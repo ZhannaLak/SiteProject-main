@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Указывайте Doctype -->
+<html lang="ru"> <!-- Указывайте язык документа -->
+
+@@include('blocks/head.html')
+
+
+
+<svg class="imgLenni" width="100%" height="375">
+	<use xlink:href="assets/icons/symbols.svg#LENNI"></use>
+</svg>
+
+<body class="body">
+	@@include('blocks/page-header.html')
+
+	<main class="main">
+		<div class="home">
+			<header class="main-header hom__main-header">
+				<span>Арт — Пространство</span>
+
+				<p class="bottom-text"> для людей, горящих сердец и делом место для настоящего</p>
+			</header>
+
+			@@include('blocks/iwant.html')
+
+			@@include('blocks/about.html')
+
+
+			<section class="section5">
+				<div class="body">
+					@@include('blocks/events.html')
+				</div>
+			</section>
+
+			<section class="section6">
+
+				<!-- Блог. 3 карточки статьи блога-->
+				@@include('blocks/blog-listing.html', {"class": "home__listing"})
+
+				<a href="#" class="listing__link link">Смотреть все</a>
+
+				<section class "about">
+					<div class="about__container">
+						<h5 class="about__section-title section-title">контакты</h5>
+					</div>
+				</section>
+
+				@@include('blocks/grid.html')
+				
+			</section>
+
+			<div class="blockquote">
+				<blockquote>
+					Просто делайте, что нравится, а мы вам поможем.
+				</blockquote>
+			</div>
+		</div>
+	</main>
+
+
+</body>
+<footer>
+	@@include('blocks/page-footer.html')
+</footer>
+
+
+</html>
