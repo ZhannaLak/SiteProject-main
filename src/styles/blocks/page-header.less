@@ -8,16 +8,29 @@
   display: flex;
   justify-content: center;
   z-index: 100;
-}
-.page-header__nav-toggle {
-  display: none;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 222, 222, 0.5);
+  
+    @supports (backdrop-filter: blur(100px)) {
+      background-color: rgba(222, 222, 222, 0.5);
+      backdrop-filter: (10px)
+    }
+  }
 }
 
 
 .breadcrumbs{
-  position: absolute;
-  left: 93px;
-  top:182px;
+  position: relative;
+  width: 1250px;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .imgLenni {
@@ -25,22 +38,6 @@
   top: 375px;
 }
 
-
-
-.page-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(222, 222, 222, 0.5);
-
-  @supports (backdrop-filter: blur(100px)) {
-    background-color: rgba(222, 222, 222, 0.5);
-    backdrop-filter: (10px)
-  }
-}
 
 .page-header__nav {
   display: flex;
@@ -79,3 +76,23 @@
   margin-right: 0;
 }
 
+
+// .show-nav {
+//   body {
+//     @media @bw1020 {
+//       overflow: hidden;
+//     }
+//   }
+//   .page-header__nav {
+//     @media @bw1020 {
+//       transform: translateX(0);
+//     }
+//   }
+//   .page-header__nav-toggle {
+//     &::before,
+//     &::after {
+//       transform-origin: 50% 50%;
+//       transition: transform 0.4s, box-shadow 0.4s;
+//     }
+//   }
+// }

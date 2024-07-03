@@ -139,7 +139,6 @@ textarea:focus::placeholder {
   gap: 10px;
   text-decoration: none;
   -webkit-transition: background-color 0.2s, color 0.2s;
-  -o-transition: background-color 0.2s, color 0.2s;
   transition: background-color 0.2s, color 0.2s;
 }
 .btn--red {
@@ -201,8 +200,7 @@ textarea:focus::placeholder {
 }
 .event-card__link:hover .event-card__title {
   color: #BC3324;
-  -webkit-text-decoration-color: #BC3324;
-          text-decoration-color: #BC3324;
+  text-decoration-color: #BC3324;
 }
 .event-card__picture {
   display: block;
@@ -237,11 +235,8 @@ textarea:focus::placeholder {
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
-  -webkit-transition: color 0.2s, -webkit-text-decoration-color 0.2s;
-  transition: color 0.2s, -webkit-text-decoration-color 0.2s;
-  -o-transition: color 0.2s, text-decoration-color 0.2s;
+  -webkit-transition: color 0.2s, text-decoration-color 0.2s;
   transition: color 0.2s, text-decoration-color 0.2s;
-  transition: color 0.2s, text-decoration-color 0.2s, -webkit-text-decoration-color 0.2s;
 }
 .event-card__description {
   margin: 0 0 auto;
@@ -339,18 +334,6 @@ textarea:focus::placeholder {
           justify-content: center;
   z-index: 100;
 }
-.page-header__nav-toggle {
-  display: none;
-}
-.breadcrumbs {
-  position: absolute;
-  left: 93px;
-  top: 182px;
-}
-.imgLenni {
-  position: absolute;
-  top: 375px;
-}
 .page-header::before {
   content: '';
   position: absolute;
@@ -366,6 +349,16 @@ textarea:focus::placeholder {
     -webkit-backdrop-filter: 10px;
             backdrop-filter: 10px;
   }
+}
+.breadcrumbs {
+  position: relative;
+  width: 1250px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.imgLenni {
+  position: absolute;
+  top: 375px;
 }
 .page-header__nav {
   display: -webkit-box;
@@ -400,7 +393,6 @@ textarea:focus::placeholder {
   font-weight: 600;
   line-height: 1.3;
   -webkit-transition: color 0.2s;
-  -o-transition: color 0.2s;
   transition: color 0.2s;
 }
 .page-header__nav-link:hover,
@@ -611,7 +603,6 @@ textarea:focus::placeholder {
   height: 128px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 286px;
 }
 .iwant_buttonleft {
   position: absolute;
@@ -655,6 +646,7 @@ textarea:focus::placeholder {
   /* left: 465px; */
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 286px;
   font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
@@ -896,8 +888,7 @@ textarea:focus::placeholder {
 }
 .article-card__link:hover ~ .article-card__info .article-card__title-link {
   color: #bc3324;
-  -webkit-text-decoration-color: #bc3324;
-          text-decoration-color: #bc3324;
+  text-decoration-color: #bc3324;
 }
 .article-card__picture {
   display: block;
@@ -905,7 +896,6 @@ textarea:focus::placeholder {
   width: 100%;
   -webkit-transition: -webkit-box-shadow 0.2s;
   transition: -webkit-box-shadow 0.2s;
-  -o-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
   overflow: hidden;
@@ -956,18 +946,13 @@ textarea:focus::placeholder {
 .article-card__title-link {
   margin: auto 0 40px;
   color: #1f1e1e;
-  -webkit-text-decoration-color: transparent;
-          text-decoration-color: transparent;
-  -webkit-transition: color 0.2s, -webkit-text-decoration-color 0.2s;
-  transition: color 0.2s, -webkit-text-decoration-color 0.2s;
-  -o-transition: color 0.2s, text-decoration-color 0.2s;
+  text-decoration-color: transparent;
+  -webkit-transition: color 0.2s, text-decoration-color 0.2s;
   transition: color 0.2s, text-decoration-color 0.2s;
-  transition: color 0.2s, text-decoration-color 0.2s, -webkit-text-decoration-color 0.2s;
 }
 .article-card__title-link:hover {
   color: #bc3324;
-  -webkit-text-decoration-color: #bc3324;
-          text-decoration-color: #bc3324;
+  text-decoration-color: #bc3324;
 }
 .article-card__title {
   margin: 0;
@@ -987,7 +972,6 @@ textarea:focus::placeholder {
   bottom: 30px;
   color: inherit;
   -webkit-transition: none;
-  -o-transition: none;
   transition: none;
 }
 .article-card + .article-card {
@@ -1076,7 +1060,6 @@ textarea:focus::placeholder {
   text-align: center;
   text-decoration: none;
   -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  -o-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
   overflow: hidden;
   cursor: pointer;
@@ -1097,7 +1080,6 @@ textarea:focus::placeholder {
   border-radius: 50%;
   background-color: #1f1e1e;
   -webkit-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 .x-btn:hover {
@@ -1135,8 +1117,7 @@ textarea:focus::placeholder {
   padding: 0 !important;
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(100%) !important;
-          clip-path: inset(100%) !important;
+  clip-path: inset(100%) !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   visibility: hidden !important;
@@ -1223,8 +1204,7 @@ textarea:focus::placeholder {
   padding: 0 !important;
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(100%) !important;
-          clip-path: inset(100%) !important;
+  clip-path: inset(100%) !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   visibility: hidden !important;
@@ -1248,7 +1228,6 @@ textarea:focus::placeholder {
   background-clip: content-box;
   background-color: transparent;
   -webkit-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 .radio__label {
@@ -1405,7 +1384,6 @@ textarea:focus::placeholder {
   line-height: 22px;
   text-decoration: underline;
   -webkit-transition: color 0.2s;
-  -o-transition: color 0.2s;
   transition: color 0.2s;
 }
 .form__close-btn:hover {
@@ -1490,6 +1468,9 @@ textarea:focus::placeholder {
   top: -30px;
   right: -30px;
 }
+.pp__x-btn__icon {
+  pointer-events: none;
+}
 .check--red {
   color: #bc3324;
 }
@@ -1539,6 +1520,13 @@ textarea:focus::placeholder {
   margin-left: 4px;
   font-size: 0.95em;
 }
+.reserve__sum__scheme {
+  position: absolute;
+  width: 780px;
+  height: 399px;
+  top: 1758px;
+  right: 293px;
+}
 .reserve__total::before {
   content: attr(data-caption);
   margin-right: 30px;
@@ -1547,6 +1535,19 @@ textarea:focus::placeholder {
   content: attr(data-currency);
   margin-left: 4px;
   font-size: 0.95em;
+}
+.reserve__scheme-title {
+  background: black;
+  color: white;
+  width: 162px;
+  height: 34px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.79px;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .reserve__checks {
   display: -webkit-box;
@@ -1880,7 +1881,6 @@ body {
   color: #1f1e1e;
   text-decoration: underline;
   -webkit-transition: color 0.2s;
-  -o-transition: color 0.2s;
   transition: color 0.2s;
   cursor: pointer;
 }
@@ -1922,7 +1922,7 @@ body {
   position: absolute;
   width: 943px;
   height: 92px;
-  top: 440px;
+  top: 550px;
   font-family: Mak;
   font-size: 30px;
   font-weight: 300;
@@ -1941,6 +1941,14 @@ body {
   line-height: 19.2px;
   text-align: left;
 }
+.event_textblock {
+  width: 870px;
+  margin-right: 291px;
+  margin-bottom: 80px;
+}
+#img_block {
+  margin-bottom: 80px;
+}
 .is-hidden {
   position: absolute !important;
   width: 0 !important;
@@ -1949,8 +1957,7 @@ body {
   padding: 0 !important;
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(100%) !important;
-          clip-path: inset(100%) !important;
+  clip-path: inset(100%) !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   visibility: hidden !important;
@@ -1964,3 +1971,9 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.show-event-popup #js-eventPP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@import "vendor/swiper.less";

@@ -1,22 +1,20 @@
 <!DOCTYPE html> <!-- Указывайте Doctype -->
-<html lang="ru">
-<!-- Указывайте язык документа -->
+<html lang="ru"> <!-- Указывайте язык документа -->
 
-<head>
-  <!-- Визуально отделяйте вложенные элементы двойным пробелом -->
+<head> <!-- Визуально отделяйте вложенные элементы двойным пробелом -->
   <meta charset="UTF-8" /> <!-- Указывайте кодировку -->
   <title>SiteProjectZhanna</title> <!-- Задавайте заголовок -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
 <body class="body">
 
 
-  <header class="page-header">
-    <!-- шапка -->
+  <header class="page-header"> <!-- шапка -->
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
         <svg class="page-header__logo-icon" width="202" height="147">
@@ -237,10 +235,12 @@
 
 
 
-  <div class="iwant">
-    <!--центральный блок "Я хочу"-->
+  <div class="iwant"> <!--центральный блок "Я хочу"-->
     <span>Я ХОЧУ</span>
-    <button class="iwant_buttonleft"> Провести мероприятие </button>
+
+    <button type="button" class="iwant_buttonleft" id="js-eventOpenBtn">
+      Провести мероприятие
+    </button>
     <button class="iwant_buttonright"> Стать арендатором </button>
   </div>
 
@@ -292,8 +292,7 @@
 
 </body>
 <footer>
-  <footer class="page-footer">
-    <!-- подвал -->
+  <footer class="page-footer"> <!-- подвал -->
     <img class="center" src="assets/images/Group 1045903.png">
     <div class="page-footer__container">
       <nav class="page-footer__nav">
@@ -304,11 +303,9 @@
       </nav>
 
 
-      <div class="subscribe">
-        <!-- контейнер 'Подпишитесь'-->
+      <div class="subscribe"> <!-- контейнер 'Подпишитесь'-->
         <label class="subscribe__inline">Подпишись и будь в курсе происходящего</label>
-        <div class="subscribe__Rectangle88">
-          <!--поле подписки-->
+        <div class="subscribe__Rectangle88"> <!--поле подписки-->
           <input name="email" Placeholder="   Email" class="subscribe__Rectangle88 button1920-768white" />
           <button class="subscribe__Rectangle88 button1920-768">Подписаться</button>
 
@@ -333,8 +330,7 @@
         <p class="frame1975__textright">Cookies</p>
       </div>
 
-      <a href="#" class="tagree">
-        <!--нижняя строка справа-->
+      <a href="#" class="tagree"> <!--нижняя строка справа-->
         <span class="tagree__textleft">Создание и продвижение</span>
         <img class="tagree__imgright" src="assets/images/tagree.png" />
       </a>
